@@ -16,7 +16,7 @@ namespace WpfApp1
             DataContext = this;
 
             _notifyIcon = new NotifyIcon();
-            _notifyIcon.Icon = new System.Drawing.Icon("C:\\Users\\Piotr\\source\\repos\\React Luncher\\React Luncher\\assets\\react.ico");
+            _notifyIcon.Icon = new System.Drawing.Icon("assets/react.ico");
             _notifyIcon.Visible = true;
 
             _notifyIcon.ContextMenuStrip = new ContextMenuStrip();
