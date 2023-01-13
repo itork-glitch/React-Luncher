@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Forms;
+using System.IO;
 
 namespace WpfApp1
 {
@@ -16,7 +17,8 @@ namespace WpfApp1
             DataContext = this;
 
             _notifyIcon = new NotifyIcon();
-            _notifyIcon.Icon = new System.Drawing.Icon("assets/react.ico");
+            string iconPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "../../assets/react.ico");
+            _notifyIcon.Icon = new System.Drawing.Icon(iconPath);
             _notifyIcon.Visible = true;
 
             _notifyIcon.ContextMenuStrip = new ContextMenuStrip();

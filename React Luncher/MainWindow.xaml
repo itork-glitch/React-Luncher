@@ -10,7 +10,7 @@
         Icon="assets/react.ico"
         Title="React Luncher" Height="450" Width="350">
     <Grid>
-        <TextBox x:Name="targetDirectoryTextBox" HorizontalAlignment="Center" Height="23" Margin="0,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="278" FontSize="10" />
+        <TextBox x:Name="targetDirectoryTextBox" HorizontalAlignment="Center" Height="23" Margin="0,31,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="278" />
         <Button x:Name="startButton" Content="Start server" HorizontalAlignment="Center" VerticalAlignment="Top" Click="startButton_Click" Margin="0,71,0,0" Width="100"/>
         <Button x:Name="stopButton" Content="Stop" HorizontalAlignment="Center" VerticalAlignment="Top" Click="stopButton_Click" Margin="0,110,0,0" Width="100"/>
         <CheckBox x:Name="runInBackgroundCheckBox" Content="Run in background" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,15" IsChecked="{Binding runInBackground, UpdateSourceTrigger=PropertyChanged}"/>
